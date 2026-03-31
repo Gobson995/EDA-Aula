@@ -1,8 +1,5 @@
 #include "arq.h"
 
-
-
-
 int vazia(struct pilha *pil)
 {
   if (pil->topo == NULL)
