@@ -1,3 +1,5 @@
+/*
+
 int validaExpressao (char *expressao) {
     Pilha *p = cria();
 
@@ -26,3 +28,5 @@ int validaExpressao (char *expressao) {
     if (vazia(p)) return 1;
     return 0;
 }
+
+*/
