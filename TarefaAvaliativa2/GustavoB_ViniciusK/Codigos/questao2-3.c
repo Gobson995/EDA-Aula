@@ -17,7 +17,7 @@ void embaralhaArray(info *array, int n) {
 }
 
 int main() {
-    FILE *csv = fopen("dataset_v1.csv", "r");
+    FILE *csv = fopen("../Dados/dataset_v1.csv", "r");
     if (!csv) {
         printf("Erro: nao foi possivel abrir o dataset_v1.csv\n");
         return 1;
@@ -45,14 +45,14 @@ int main() {
     fclose(csv);
     printf("Registros lidos: %d\n", total);
 
-    srand(time(NULL));
+    srand(42);
     embaralhaArray(dados, total);
 
     int bases[] = {500, 1000, 1500, 2000, 2500, 3000, 3500, 4000,
                    4500, 5000, 5500, 6000, 6500, 7000, 7500, 8000, 8500, 9000};
     int numBases = sizeof(bases) / sizeof(bases[0]);
 
-    FILE *saida = fopen("resultados.csv", "w");
+    FILE *saida = fopen("../Analise/resultados.csv", "w");
     if (!saida) {
         printf("Erro: nao foi possivel criar resultados.csv\n");
         free(dados);

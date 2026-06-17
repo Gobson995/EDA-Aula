@@ -20,7 +20,7 @@ x = np.array(tamanhos)
 y = np.array(medias)
 
 
-coeficientes = np.polyfit(x, y, 2) # PRIMEIRO GRAU
+coeficientes = np.polyfit(x, y, 1) # PRIMEIRO GRAU
 polinomio = np.poly1d(coeficientes)
 y_ajustado = polinomio(x)
 
